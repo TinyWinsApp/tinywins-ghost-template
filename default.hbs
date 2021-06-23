@@ -2,23 +2,24 @@
 <html lang="{{@site.locale}}">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{meta_title}}</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;0,800;1,400;1,700&display=swap">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{meta_title}}</title>
+  <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
 
-    {{ghost_head}}
+	{{ghost_head}}
 </head>
 
 <body>
-    <div class="site">
-        <div class="site-content">
-            {{{body}}}
-        </div>
-    </div>
+	<div class="site">
+		<div class="site-content">
+			{{{body}}}
+			Yo!
+      <button class="bg-indigo-500 hover:bg-indigo-600 focus:outline-none rounded-md px-6 py-3 mx-auto block text-white transition duration-500 ease-in-out mt-32">Open modal</button>
+		</div>
+	</div>
 
-    {{ghost_foot}}
+	{{ghost_foot}}
 </body>
 
 </html>

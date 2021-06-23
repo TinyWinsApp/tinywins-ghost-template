@@ -3,19 +3,20 @@
   "description": "A very simple template for newsletters.",
   "version": "1.0.0",
   "engines": {
-      "ghost": ">=4.0.0",
-      "ghost-api": "v4"
+    "ghost": ">=4.0.0",
+    "ghost-api": "v4"
   },
   "keywords": [
     "ghost-theme"
   ],
   "license": "MIT",
   "author": {
-      "name": "TinyDot",
-      "email": "hello@tinydot.app",
-      "url": "https://tinydot.app"
+    "name": "TinyDot",
+    "email": "hello@tinydot.app",
+    "url": "https://tinydot.app"
   },
   "scripts": {
+    "dev": "gulp",
     "test": "gscan .",
     "test:ci": "gscan --fatal --verbose .",
     "lint": "gulp lint",
@@ -23,5 +24,25 @@
   },
   "browserslist": [
     "defaults"
-  ]
+  ],
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.3",
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.2.6",
+    "beeper": "2.1.0",
+    "cssnano": "^5.0.6",
+    "gscan": "^4.1.0",
+    "gulp": "^4.0.2",
+    "gulp-livereload": "^4.0.2",
+    "gulp-postcss": "9",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^5.0.1",
+    "gulp-zip": "^5.1.0",
+    "postcss": "^8.3.5",
+    "postcss-color-mod-function": "^3.0.3",
+    "postcss-easy-import": "^3.0.0",
+    "tailwindcss": "^2.2.4"
+  }
 }
