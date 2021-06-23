@@ -9,6 +9,7 @@ production stylesheet in assets/built/screen.css using: gulp dev
 /* ---------------------------------------------------------- */
 
 /* Base components */
+@import "base/tailwind.css";
 
 /* Ghost components */
 @import "ghost/kg.css";
