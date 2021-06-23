@@ -1,0 +1,27 @@
+{
+  "name": "tinywins",
+  "description": "A very simple template for newsletters.",
+  "version": "1.0.0",
+  "engines": {
+      "ghost": ">=4.0.0",
+      "ghost-api": "v4"
+  },
+  "keywords": [
+    "ghost-theme"
+  ],
+  "license": "MIT",
+  "author": {
+      "name": "TinyDot",
+      "email": "hello@tinydot.app",
+      "url": "https://tinydot.app"
+  },
+  "scripts": {
+    "test": "gscan .",
+    "test:ci": "gscan --fatal --verbose .",
+    "lint": "gulp lint",
+    "zip": "gulp zip"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
