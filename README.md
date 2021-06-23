@@ -5,10 +5,10 @@ TinyWins Ghost Template
 
 ### Resources
 
-Add Tailwinds to template via (How to create a Ghost theme with Tailwind CSS.)[https://www.usepine.com/blog/en/how-to-create-a-ghost-theme-with-tailwind-css/]
+Add Tailwinds to template via [How to create a Ghost theme with Tailwind CSS.](https://www.usepine.com/blog/en/how-to-create-a-ghost-theme-with-tailwind-css/)
 
 
-### Development Notes from (Ghost Starter)[https://github.com/TryGhost/Starter/blob/master/README.md]
+### Development Notes from [Ghost Starter](https://github.com/TryGhost/Starter/blob/master/README.md)
 
 > I just took what they did with Gulp from here.
 
