@@ -1,0 +1,21 @@
+{{#if isSecondary}}
+<div class="my-fancy-nav-wrapper">
+  <!-- Loop through the navigation items -->
+  {{#foreach navigation}}
+  <a class="inline-block py-2 px-3 hover:bg-gray-200 rounded-full nav-{{slug}}{{#if current}} nav-current{{/if}}" href="{{url absolute="true"}}">
+    <div class="flex items-center relative cursor-pointer whitespace-nowrap">{{label}}</div>
+  </a>
+  {{/foreach}}
+  <!-- End the loop -->
+</div>
+{{else}}
+<div class="my-fancy-nav-wrapper">
+  <!-- Loop through the navigation items -->
+  {{#foreach navigation}}
+  <a class="inline-block py-2 px-3 hover:bg-gray-200 rounded-full nav-{{slug}}{{#if current}} nav-current{{/if}}" href="{{url absolute="true"}}">
+    <div class="flex items-center relative cursor-pointer whitespace-nowrap">{{label}}</div>
+  </a>
+  {{/foreach}}
+  <!-- End the loop -->
+</div>
+{{/if}}
