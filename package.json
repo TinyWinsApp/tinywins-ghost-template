@@ -15,6 +15,9 @@
     "email": "hello@tinydot.app",
     "url": "https://tinydot.app"
   },
+  "screenshots": {
+    "desktop": "assets/screenshot-desktop.png"
+  },
   "scripts": {
     "dev": "gulp",
     "test": "gscan .",
