@@ -1,7 +1,9 @@
 🙌 TinyWins Ghost Template
 ---
 
-Welcome! Here's our Ghost template that we use for our newsletter. Maintained by the 🙌 TinyWins Team. We're happy to share but know that there's no warranty and really anything guaranteed with this template. We made it in 2 days with the use of some awesome resources listed below.👇 Check them all out!
+Welcome! Here's our Ghost template that we use for our newsletter. Maintained by the 🙌 TinyWins Team. We're happy to share and use it how you want. We made it in 2 days with the use of some awesome resources listed below.👇 Check them all out!
+
+MIT License (There's no warranty and really anything guaranteed with this template, AS-IS)
 
 ### Resources
 
