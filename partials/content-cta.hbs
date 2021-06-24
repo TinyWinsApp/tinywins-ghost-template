@@ -1,0 +1,53 @@
+{{{html}}}
+{{#if access}}
+	{{#is "post"}}
+		{{#unless @member}}
+			<section class="single-cta">
+				<h2 class="single-cta-title">Enjoying these posts? Subscribe for more</h2>
+				<button class="button single-cta-button" data-portal="signup">Subscribe now</button>
+				<br>
+				<button class="button-text single-cta-footer" data-portal="signin">Already have an account? Sign in</button>
+			</section>
+
+			<section>
+				<div class="w-full flex-none text-xl font-medium mt-2 text-center py-2">
+					<h2 class="single-cta-title">Enjoying these posts? Subscribe for more</h2>
+				</div>
+				<div class="flex space-x-3 mb-4 text-lg font-medium">
+					<div class="flex-auto flex space-x-3">
+						<button
+							class="w-1/2 flex items-center justify-center rounded-md hover:bg-purple-600 bg-purple-700 text-white"
+							type="button"
+							data-portal="signup">Subscribe now</button>
+						<button
+							class="w-1/2 flex items-center justify-center rounded-md border border-gray-300"
+							type="button"
+							data-portal="signin">Already have an account? Sign in</button>
+					</div>
+				</div>
+			</section>
+		{{/unless}}
+	{{/is}}
+{{else}}
+	<section>
+		<div class="w-full flex-none text-xl font-medium mt-2 text-center py-2">
+		{{#has visibility="paid"}}
+			<h2 class="single-cta-title">This post is for paying subscribers only</h2>
+		{{else}}
+			<h2 class="single-cta-title">This post is for subscribers only</h2>
+		{{/has}}
+		</div>
+		<div class="flex space-x-3 mb-4 text-lg font-medium">
+			<div class="flex-auto flex space-x-3">
+				<button
+					class="w-1/2 flex items-center justify-center rounded-md hover:bg-purple-600 bg-purple-700 text-white"
+					type="button"
+					data-portal="signup">Subscribe now</button>
+				<button
+					class="w-1/2 flex items-center justify-center rounded-md border border-gray-300"
+					type="button"
+					data-portal="signin">Already have an account? Sign in</button>
+			</div>
+		</div>
+	</section>
+{{/if}}

@@ -1,0 +1,31 @@
+<article class="{{post_class}}">
+
+	<div class="kg-canvas">
+		{{content}}
+	</div>
+
+	{{#is "post"}}
+	<footer>
+		<div>
+			{{#prev_post}}
+			<div>
+				<a href="{{url}}" aria-label="Previous post">
+					<span>{{> icons/arrow-left}}</span>
+				</a>
+			</div>
+			{{/prev_post}}
+		</div>
+
+
+		<div>
+			{{#next_post}}
+			<div>
+				<a href="{{url}}" aria-label="Next post">
+					<span>{{> icons/arrow-right}}</span>
+				</a>
+			</div>
+			{{/next_post}}
+		</div>
+	</footer>
+	{{/is}}
+</article>
