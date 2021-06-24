@@ -1,5 +1,7 @@
-TinyWins Ghost Template
+🙌 TinyWins Ghost Template
 ---
+
+Welcome! Here's our Ghost template that we use for our newsletter. Maintained by the 🙌 TinyWins Team. We're happy to share but know that there's no warranty and really anything guaranteed with this template. We made it in 2 days with the use of some awesome resources listed below.👇 Check them all out!
 
 ### Resources
 
@@ -8,6 +10,8 @@ Add Tailwinds to template via [How to create a Ghost theme with Tailwind CSS.](h
 [Edition Template by Ghost](https://github.com/TryGhost/Edition) saved a lot of time with shortcuts.
 
 [TailwindsCSS](https://tailwindcss.com/)
+
+[tailwindcomponents](https://tailwindcomponents.com/)
 
 
 ### Development Notes from [Ghost Starter](https://github.com/TryGhost/Starter/blob/master/README.md)
