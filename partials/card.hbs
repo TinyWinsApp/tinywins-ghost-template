@@ -1,0 +1,25 @@
+{{!--
+Re-usable card for linking to posts
+--}}
+
+<article class="{{post_class}}">
+  <a href="{{url}}">
+		<figure class="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
+			<div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+				<figcaption class="font-medium">
+					<div class="text-cyan-600">
+						{{title}}
+					</div>
+					<div class="text-gray-500">
+						<span>
+							<time datetime="{{date format="YYYY-MM-DD"}}">
+								{{date format="D MMM YYYY"}}
+							</time> 
+							<span class="bull">&bull;</span> {{reading_time}}
+						</span>
+					</div>
+				</figcaption>
+			</div>
+		</figure>
+	</a>
+</article>

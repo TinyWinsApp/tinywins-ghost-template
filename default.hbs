@@ -11,20 +11,20 @@
 </head>
 
 <body>
-  <header id="gh-head" class="gh-head">
-    <nav class=" bg-white w-full flex relative justify-between items-center mx-auto px-8 h-20">
+  <header>
+    <nav class="bg-white w-full flex relative justify-between items-center mx-auto px-8 h-20">
       <!-- logo -->
       <div class="inline-flex">
         <a class="text-gray-800 mx-1.5 sm:mx-6 font-bold" href="/">
-          {{#if @site.logo}}
-          <div class="md:block">
-            <img src="{{@site.logo}}" alt="{{@site.title}}" />
-          </div>
-          {{else}}
-          <div class="block">
+          {{!-- <div class="iblock"> --}}
+            {{#if @site.logo}}
+            <img
+              class="w-8 h-8 rounded-full inline-flex"
+              src="{{@site.logo}}"
+              alt="{{@site.title}}" />
+            {{/if}}
             {{@site.title}}
-          </div>
-          {{/if}}          
+          {{!-- </div> --}}
         </a>
       </div>
       <!-- end logo -->
@@ -37,24 +37,43 @@
             {{/if}}
             <div class="block relative">
               {{#if @site.facebook}}
-              <a class="inline-block py-2 px-3 hover:bg-gray-200 rounded-full relative" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">
-                <div class="w-6 h-6 rounded-full flex items-center h-5" alt="" width="384" height="512">
+              <a
+                class="inline-block py-2 px-3 hover:bg-gray-200 rounded-full relative"
+                href="{{facebook_url @site.facebook}}"
+                title="Facebook"
+                target="_blank"
+                rel="noopener">
+                <div class="w-6 h-6 rounded-full flex items-center h-5">
                   {{> "icons/facebook"}}
                 </div>
               </a>
               {{/if}}
               {{#if @site.twitter}}
-              <a class="inline-block py-2 px-3 hover:bg-gray-200 rounded-full relative" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">
-                <div class="w-6 h-6 rounded-full flex items-center h-5" alt="" width="384" height="512">
+              <a
+                class="inline-block py-2 px-3 hover:bg-gray-200 rounded-full relative"
+                href="{{twitter_url @site.twitter}}"
+                title="Twitter"
+                target="_blank"
+                rel="noopener">
+                <div class="w-6 h-6 rounded-full flex items-center">
                   {{> "icons/twitter"}}
                 </div>
               </a>
               {{/if}}
-              <a class="inline-block py-2 px-3 hover:bg-gray-200 rounded-full relative" href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank" rel="noopener">
-                <div class="w-6 h-6 rounded-full flex items-center h-5" alt="" width="384" height="512">
-                  {{> "icons/rss"}}
-                </div>
-              </a>
+
+              {{#if @member}}
+              <button
+                class="inline-block py-2 px-3 hover:bg-purple-600 bg-purple-700 text-white rounded-full relative"
+                data-portal="account">
+                Account
+              </button>
+              {{else}}
+              <button
+                class="inline-block py-2 px-3 hover:bg-purple-600 bg-purple-700 text-white rounded-full relative"
+                data-portal="signup">
+                Subscribe
+              </button>
+              {{/if}}
             </div>
           </div>
         </div>
@@ -63,11 +82,12 @@
     </nav>
   </header>
   <div class="container mx-auto">
+    {{#is "home"}}
+      {{> hero}}
+    {{/is}}
     <div class="max-w-6xl mx-auto md:px-6 px-4">
       <div class="md:py-20 py-12">
-        <div class="md:pb-20 pb-12 max-w-3xl mx-auto text-center">
-          {{{body}}}
-        </div>
+        {{{body}}}
       </div>
     </div>
   </div>
