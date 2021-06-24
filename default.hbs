@@ -11,75 +11,7 @@
 </head>
 
 <body>
-  <header>
-    <nav class="bg-white w-full flex relative justify-between items-center mx-auto md:px-8 h-20">
-      <!-- logo -->
-      <div class="inline-flex">
-        <a class="text-gray-800 mx-1.5 font-bold" href="/">
-          {{#if @site.logo}}
-          <img
-            class="w-8 h-8 rounded-full inline-flex"
-            src="{{@site.logo}}"
-            alt="{{@site.title}}" />
-          {{/if}}
-          {{@site.title}}
-        </a>
-      </div>
-      <!-- end logo -->
-      <!-- links -->
-      <div class="flex-initial">
-        <div class="flex justify-end items-center relative">
-          <div class="flex mr-4 items-center">
-            {{#if @site.navigation}}
-                {{navigation}}
-            {{/if}}
-            <div class="block relative">
-              {{#if @site.facebook}}
-              <div class="px-3 inline-block">
-                <a
-                  class="inline-block py-2 px-3 hover:bg-gray-200 rounded-full"
-                  href="{{facebook_url @site.facebook}}"
-                  title="Facebook"
-                  target="_blank"
-                  rel="noopener">
-                  👁
-                </a>
-              </div>
-              {{/if}}
-              {{#if @site.twitter}}
-              <div class="inline-block px-3">
-                <a
-                  class="inline-block py-2 px-3 hover:bg-gray-200 rounded-full"
-                  href="{{twitter_url @site.twitter}}"
-                  title="Twitter"
-                  target="_blank"
-                  rel="noopener">
-                  🐦
-                </a>
-              </div>
-              {{/if}}
-
-              {{#if @member}}
-                <button
-                  class="hidden md:inline-block py-2 px-3 hover:bg-purple-600 bg-purple-700 text-white rounded-full relative"
-                  data-portal="account">
-                  Account
-                </button>
-                {{else}}
-                <button
-                  class="hidden md:inline-block py-2 px-3 hover:bg-purple-600 bg-purple-700 text-white rounded-full relative"
-                  data-portal="signup">
-                  Subscribe
-                </button>
-              </div>
-              {{/if}}
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end links -->
-    </nav>
-  </header>
+  {{> header}}
   <div class="container mx-auto">
     {{#is "home"}}
       {{> hero}}
