@@ -17,13 +17,13 @@
 		</div>
 		{{/if}}
 
-		<div class="flex-auto p-6">
+		<div class="flex-auto p-6 relative">
 			<div class="flex flex-wrap">
 				<h1 class="flex-auto text-xl font-semibold">
 					{{title}}
 				</h1>
 				<div class="text-md font-semibold text-gray-500">
-					Written by {{#foreach authors}}<a href="{{url}}">{{name}}</a>{{/foreach}}
+					Written by {{#foreach authors}}<a href="{{url}}">{{name}}</a> {{/foreach}}
 				</div>
 
 				{{#if custom_excerpt}}
@@ -32,7 +32,7 @@
 				</div>
 				{{/if}}
 				
-				<p class="text-sm text-gray-500">
+				<div class="text-sm w-full flex-none text-gray-500">
 					<time datetime="{{date format="YYYY-MM-DD"}}">
 						{{date format="D MMM YYYY"}}
 					</time> 
@@ -45,30 +45,30 @@
 							{{name}}
 						</a>
 					{{/primary_tag}} 
-					<span class="bull">&bull;</span> 
-					<div class="flex-none">
-						<a class="inline-block rounded-full relative px-2"
-								href="https://www.facebook.com/sharer.php?u={{url absolute="true"}}"
-								target="_blank"
-								rel="noopener noreferrer">
-							<div class="w-5 h-5 rounded-full flex items-center">
-								{{> icons/facebook}}
-							</div>
-						</a>
-						<a class="inline-block hover:bg-gray-200 rounded-full relative"
-								href="https://twitter.com/intent/tweet?url={{url absolute="true"}}&text={{encode title}}"
-								target="_blank"
-								rel="noopener noreferrer">
-							<div class="w-5 h-5 rounded-full flex items-center">
-								{{> icons/twitter}}
-							</div>
-						</a>
+				</div>
+			</div>
+
+			<div class="absolute bottom-0 right-0">
+				<a class="inline-block relative px-2 hover:text-blue-600 text-blue-700"
+						href="https://www.facebook.com/sharer.php?u={{url absolute="true"}}"
+						target="_blank"
+						rel="noopener noreferrer">
+					<div class="w-5 h-5 rounded-full flex items-center">
+						{{> icons/facebook}}
 					</div>
-				</p>
+				</a>
+				<a class="inline-block relative hover:text-blue-400 text-blue-500"
+						href="https://twitter.com/intent/tweet?url={{url absolute="true"}}&text={{encode title}}"
+						target="_blank"
+						rel="noopener noreferrer">
+					<div class="w-5 h-5 rounded-full flex items-center">
+						{{> icons/twitter}}
+					</div>
+				</a>
 			</div>
 		</div>
 	</header>
-	
+
 	<div class="py-5">
 		{{> content}}
 	</div>
