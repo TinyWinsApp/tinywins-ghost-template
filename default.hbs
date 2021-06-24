@@ -12,10 +12,10 @@
 
 <body>
   <header>
-    <nav class="bg-white w-full flex relative justify-between items-center mx-auto px-8 h-20">
+    <nav class="bg-white w-full flex relative justify-between items-center mx-auto md:px-8 h-20">
       <!-- logo -->
       <div class="inline-flex">
-        <a class="text-gray-800 mx-1.5 sm:mx-6 font-bold" href="/">
+        <a class="text-gray-800 mx-1.5 font-bold" href="/">
           {{!-- <div class="iblock"> --}}
             {{#if @site.logo}}
             <img
@@ -62,17 +62,18 @@
               {{/if}}
 
               {{#if @member}}
-              <button
-                class="inline-block py-2 px-3 hover:bg-purple-600 bg-purple-700 text-white rounded-full relative"
-                data-portal="account">
-                Account
-              </button>
-              {{else}}
-              <button
-                class="inline-block py-2 px-3 hover:bg-purple-600 bg-purple-700 text-white rounded-full relative"
-                data-portal="signup">
-                Subscribe
-              </button>
+                <button
+                  class="hidden md:inline-block py-2 px-3 hover:bg-purple-600 bg-purple-700 text-white rounded-full relative"
+                  data-portal="account">
+                  Account
+                </button>
+                {{else}}
+                <button
+                  class="hidden md:inline-block py-2 px-3 hover:bg-purple-600 bg-purple-700 text-white rounded-full relative"
+                  data-portal="signup">
+                  Subscribe
+                </button>
+              </div>
               {{/if}}
             </div>
           </div>
@@ -85,11 +86,11 @@
     {{#is "home"}}
       {{> hero}}
     {{/is}}
-    <div class="max-w-6xl mx-auto md:px-6 px-4">
+    {{!-- <div class="max-w-6xl mx-auto md:px-6 px-4"> --}}
       <div class="md:py-20 py-12">
         {{{body}}}
       </div>
-    </div>
+    {{!-- </div> --}}
   </div>
 
 	{{ghost_foot}}
