@@ -5,6 +5,10 @@ TinyWins Ghost Template
 
 Add Tailwinds to template via [How to create a Ghost theme with Tailwind CSS.](https://www.usepine.com/blog/en/how-to-create-a-ghost-theme-with-tailwind-css/)
 
+[Edition Template by Ghost](https://github.com/TryGhost/Edition) saved a lot of time with shortcuts.
+
+[TailwindsCSS](https://tailwindcss.com/)
+
 
 ### Development Notes from [Ghost Starter](https://github.com/TryGhost/Starter/blob/master/README.md)
 
