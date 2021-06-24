@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="302px" viewBox="0 0 500 302" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Logo Copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="2.09542036%" y1="58.3486664%" x2="96.2745909%" y2="56.8297757%" id="linearGradient-1">
+            <stop stop-color="#5051DB" offset="0%"></stop>
+            <stop stop-color="#2B2B9F" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="2.09542036%" y1="54.4575252%" x2="96.2745909%" y2="53.6465581%" id="linearGradient-2">
+            <stop stop-color="#FFDB8E" offset="0%"></stop>
+            <stop stop-color="#FFB555" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Logo-Copy-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#37C2D9" x="0" y="0" width="500" height="302"></rect>
+        <g id="Progress-Emojis" transform="translate(-523.000000, -376.000000)" stroke-width="14">
+            <path d="M1296.40736,255.746419 C1180.59614,262.02439 1101.87071,280.258693 1060.69498,311.367657 C1014.31002,346.412284 979.017083,400.163559 945.527894,450.91007 C903.565586,514.495983 864.066723,572.913506 811.56801,588.706375 C661.201979,633.940078 509.90768,619.754955 357.697827,545.970124 L349.621166,814.375231 L1296.40736,814.375231 L1296.40736,255.746419 Z" id="Rectangle" stroke="#2B2B9F" fill="url(#linearGradient-1)" transform="translate(822.907358, 534.875231) rotate(-138.000000) translate(-822.907358, -534.875231) "></path>
+            <path d="M1540,296.259523 C1349.36731,303.540395 1220.24366,325.459109 1152.87642,362.649551 C1077.92842,404.024997 1020.79967,467.465603 966.682109,527.386471 C899.815037,601.424049 837.306359,669.845883 753.502804,688.266883 C510.649961,741.648772 266.307368,724.193461 20.4787256,635.83923 L7.2942041,955.995211 L1540,955.995211 L1540,296.259523 Z" id="Rectangle" stroke="#FFB555" fill="url(#linearGradient-2)"></path>
+        </g>
+    </g>
+</svg>

@@ -16,6 +16,17 @@ Re-usable card for linking to posts
 					alt="{{title}}"
 				/>
 			</div>
+			{{else}}
+			<div class="col-start-1 row-start-1 block">
+				<img
+					class="inset-0 w-full h-full object-cover rounded-lg"
+					srcset="{{asset "images/no-image.svg"}}"
+					sizes="(max-width: 1000px) 1000px, 2000px"
+					loading="lazy"
+					src="{{asset "images/no-image.png"}}"
+					alt="No Feature Image"
+				/>
+			</div>
 			{{/if}}
 			<div class="pt-6 md:p-8 text-center md:text-left space-y-4">
 				<figcaption>
